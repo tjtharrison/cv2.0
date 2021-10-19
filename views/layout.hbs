@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"
+        integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    {{!-- <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/dt/dt-1.10.18/r-2.2.2/datatables.min.css" />
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> --}}
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/styles.css' />
+</head>
+
+<div id="header" class="header displayBuilt">
+    <div id="navBar">
+        <ul class="nav">
+            <li class="nav {{#if active.index}}active{{/if}}">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav">
+                <a href="https://gitlab.com/Tjth-ltd/cv2.0" target="_blank"><i class="fab fa-gitlab"></i> Download CV</a>
+            </li>
+            <li class="nav">
+                <a href="https://tjth.co" target="_blank"><i class="fas fa-globe-europe"></i> Visit My Website</a>
+            </li>
+            <li class="nav">
+                <a href="https://tjth.co/portfolio" target="_blank"><i class="fas fa-paint-brush"></i> Portfolio</a>
+            </li>
+            <li class="nav">
+                <a href="https://tjth.co/technical-resources" target="_blank"><i class="fas fa-code"></i> Technical
+                    Resources</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<body>
+<div id="buildSkip" class="buildInstruct hideBuilt">
+    <p><a href="/main/?main">Skip Build</a></p>
+</div>
+    <h1>{{title}}</h1>
+
+    <div id="content">
+        {{{body}}}
+    </div>
+
+
+</body>
+
+<footer>
+    <script src="/js/typewriter.js"></script>
+    <script src="/js/displayNav.js"></script>
+    <script src="/js/buildCv.js"></script>
+</footer>
+
+</html>

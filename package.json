@@ -1,0 +1,27 @@
+{
+  "name": "express-website",
+  "version": "1.0.0",
+  "description": "Express Website Template",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/table-tops/tt-admin-panel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/table-tops/tt-admin-panel/issues"
+  },
+  "homepage": "https://gitlab.com/table-tops/tt-admin-panel#README",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "hbs": "^4.1.0",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7"
+  }
+}
