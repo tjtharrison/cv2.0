@@ -9,12 +9,31 @@ window.onload = function () {
     setTimeout(h2Border, 50000)
 };
 
+function skipStyling() {
+    console.log("Got here")
+    setWidth()
+    leftWhite()
+    leftColor()
+    rightGreen()
+    linkColour()
+    columnPadding()
+    openSans()
+    h2Border()
+    hideBuilder()
+}
+
 function setWidth() {
     var width70 = document.getElementById("width70 left");
     width70.className += " width70";
     var width30 = document.getElementById("width30 right");
     width30.className += " width30";
 }
+
+function hideBuilder() {
+    var builder = document.getElementById("builder");
+    builder.className += " displayNone"
+}
+
 function leftWhite() {
     var left = document.getElementById("width70 left");
     left.className += " left";

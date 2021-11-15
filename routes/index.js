@@ -11,7 +11,7 @@ router.get('/', function (req, res, next) {
 /* GET Main. */
 router.get('/main', function (req, res, next) {
     // const api = process.env.API_URL || "localhost";
-    res.render('maincv', { title: 'TJTH CV 2.0 Main CV', active: { index: true }});
+    res.render('maincv', { title: 'TJTH CV 2.0', active: { index: true }});
 });
 
 module.exports = router;
