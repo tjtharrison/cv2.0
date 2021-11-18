@@ -1,23 +1,24 @@
 <pre id="typewriter" class="hideBuilt">
-
-<span class="root-highlight">root@tjth-cv:~$</span> kubectl apply -f kubernetes/00-namespace.yaml
-<span class="static">namespace/tjth-cv created</span>
-<span class="root-highlight">root@tjth-cv:~$</span> kubectl apply -f kubernetes/01-service-lb.yaml
-<span class="static">service/svc-lb-tjth-cv created</span>
-<span class="root-highlight">root@tjth-cv:~$</span> kubectl apply -f kubernetes/03-deployment.yaml
-<span class="static">deployment.apps/tjth-cv created</span>
-<span class="root-highlight">root@tjth-cv:~$</span> kubectl get svc -n tjth-cv svc-lb-tjth-cv --output jsonpath='{.status.loadBalancer.ingress[0].ip}'
-<span class="static">10.12.12.106</span>
-<span class="static">Reloading...</span>
+<span class="root-highlight">root@tjth-cv:~#</span> git clone git@github.com:tjtharrison/cv2.0.git
+<span class="root-highlight">root@tjth-cv:~#</span> cd cv2.0
+<span class="root-highlight">root@tjth-cv:~/cv2.0/</span> terraform init
+<span class="static">Terraform initalised!</span>
+<span class="root-highlight">root@tjth-cv:~/cv2.0/</span> terraform apply
+<span class="static">applying..</span>
+<span class="static">applying..</span>
+<span class="static">applying..</span>
+<span class="static">applied!</span>
+<span>Reloading page...</span>
 </pre>
 <script>
         $(document).ready(function () {
                 setInterval(function () {
                         reload_page()
-                }, 30000);
+                }, 21000);
         });
 
         function reload_page() {
-                window.location = "http://localhost:8001/main/?main";
+                document.cookie = "buildState=built"
+                window.location = "/";
         }
 </script>

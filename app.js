@@ -2,12 +2,16 @@ const express = require('express');
 const path = require('path');
 const hbs = require('express-handlebars');
 const bodyParser = require("body-parser");
+const cookieParser = require('cookie-parser');
 
 // App Routes
 var indexRouter = require('./routes/index');
 
 // Set App
 const app = express()
+
+// Setup cookie parser
+app.use(cookieParser());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

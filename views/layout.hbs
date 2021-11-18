@@ -13,9 +13,6 @@
         integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    {{!-- <link rel="stylesheet" type="text/css"
-        href="https://cdn.datatables.net/v/dt/dt-1.10.18/r-2.2.2/datatables.min.css" />
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> --}}
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/styles.css' />
 </head>
@@ -28,13 +25,13 @@
                 <a href="/"><i class="fas fa-home"></i> Home</a>
             </li>
             <li class="nav">
-                <a href="https://gitlab.com/Tjth-ltd/cv2.0" target="_blank"><i class="fab fa-gitlab"></i> Download CV</a>
+                <a href="https://github.com/tjtharrison/cv2.0" target="_blank"><i class="fab fa-github"></i> Download CV</a>
             </li>
             <li class="nav">
                 <a href="https://tjth.co" target="_blank"><i class="fas fa-globe-europe"></i> Visit My Website</a>
             </li>
             <li class="nav">
-                <a href="https://tjth.co/portfolio" target="_blank"><i class="fas fa-paint-brush"></i> Portfolio</a>
+                <a href="https://tjth.co/portfolio" target="_blank"><i class="fas fa-file-alt"></i> Download PDF</a>
             </li>
             <li class="nav">
                 <a href="https://tjth.co/technical-resources" target="_blank"><i class="fas fa-code"></i> Technical
@@ -46,7 +43,7 @@
 
 <body>
 <div id="buildSkip" class="buildInstruct hideBuilt">
-    <p><a href="/main/?main">Skip Build</a></p>
+    <p><a href="/?state=deployed">Skip Build</a></p>
 </div>
     <h1>{{title}}</h1>
 
@@ -59,7 +56,7 @@
 
 <footer>
     <script src="/js/typewriter.js"></script>
-    <script src="/js/displayNav.js"></script>
+    <script src="/js/displayCV.js"></script>
     <script src="/js/buildCv.js"></script>
 </footer>
 

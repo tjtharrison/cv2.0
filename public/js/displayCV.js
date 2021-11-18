@@ -1,9 +1,6 @@
-url = new URL(window.location.href);
-
-var pattern = /main/;
-var URL = location.search;
-
-if (pattern.test(URL)) {
+if (document.cookie == "buildState=built") {
+    console.log(JSON.stringify(document.cookie))
+    console.log("Already built")
     var header = document.getElementById("header");
     var mainCV = document.getElementById("mainCV");
     var buildSkip = document.getElementById("buildSkip");

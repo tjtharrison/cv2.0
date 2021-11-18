@@ -1,12 +1,12 @@
 window.onload = function () {
-    setTimeout(setWidth, 5000)
-    setTimeout(leftWhite, 10000)
-    setTimeout(leftColor, 15000)
-    setTimeout(rightGreen, 20000)
-    setTimeout(linkColour, 30000)
-    setTimeout(columnPadding, 35000)
-    setTimeout(openSans, 40000)
-    setTimeout(h2Border, 50000)
+    setTimeout(setWidth, 6000)
+    setTimeout(leftWhite, 12000)
+    setTimeout(leftColor, 17000)
+    setTimeout(rightGreen, 23000)
+    setTimeout(linkColour, 34000)
+    setTimeout(columnPadding, 40000)
+    setTimeout(openSans, 45000)
+    setTimeout(h2Border, 55000)
 };
 
 function skipStyling() {

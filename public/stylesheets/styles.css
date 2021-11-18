@@ -127,6 +127,15 @@ pre {background-color:transparent;border:none;font-size:1em; width: 100%;
 #SkipStyling {
     float:right;
     margin: 5px 5px 0 0 ;
+    background: #272727;
+    border: none;
+    color: #00733f;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#SkipStyling:hover {
+    text-decoration: underline;
 }
 
 .row {margin: 0;}
