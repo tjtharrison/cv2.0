@@ -1,10 +1,9 @@
 version: '3'
 services:
     tjth-cv:
-        build:
-          context: .
-          dockerfile: Dockerfile
+        image: tjth/tjth-cv:2.0
         ports:
-          - 8001:8001
+          - 80:8001
         container_name: tjth-cv
         command: ['node','app.js']
+        restart: always
