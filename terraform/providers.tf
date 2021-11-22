@@ -1,6 +1,6 @@
-provider "aws" { 
-    # Auth achieved by environment variables
-    region = "eu-west-1"
+provider "aws" {
+  # Auth achieved by environment variables
+  region = "eu-west-1"
 }
 
 terraform {
