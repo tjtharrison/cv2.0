@@ -124,7 +124,7 @@ pre {background-color:transparent;border:none;font-size:1em; width: 100%;
     }
 }
 
-#SkipStyling {
+.SkipStyling {
     float:right;
     margin: 5px 5px 0 0 ;
     background: #272727;
@@ -134,7 +134,7 @@ pre {background-color:transparent;border:none;font-size:1em; width: 100%;
     padding: 5px;
 }
 
-#SkipStyling:hover {
+.SkipStyling:hover {
     text-decoration: underline;
 }
 

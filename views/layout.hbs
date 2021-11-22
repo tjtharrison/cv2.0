@@ -19,7 +19,7 @@
 
 <div id="header" class="header displayBuilt">
     <div id="navBar">
-        <button id="SkipStyling"  onclick="skipStyling()">Skip Styling</button>
+        <button id="SkipStyling" class="SkipStyling" onclick="skipStyling()">Skip Styling</button>
         <ul class="nav">
             <li class="nav {{#if active.index}}active{{/if}}">
                 <a href="/"><i class="fas fa-home"></i> Home</a>
@@ -42,8 +42,8 @@
 </div>
 
 <body>
-<div id="buildSkip" class="buildInstruct hideBuilt">
-    <p><a href="">Skip Build</a></p>
+<div >
+    <p><button id="buildSkip" class="buildInstruct hideBuilt" class="SkipStyling" onclick="reload_page()">Skip Build</button></p>
 </div>
     <h1>{{title}}</h1>
 
