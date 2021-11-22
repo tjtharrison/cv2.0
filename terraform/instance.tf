@@ -1,17 +1,17 @@
 
 resource "aws_instance" "tjth_cv" {
-    ami = local.instance_ami
-    availability_zone = local.availability_zone
-    instance_type = local.instance_type
-    vpc_security_group_ids = [ aws_security_group.tjth_cv.id ]
-    tags = {
-        Name = local.project_name
-    }
-    key_name = "hvm-access"
+  ami                    = local.instance_ami
+  availability_zone      = local.availability_zone
+  instance_type          = local.instance_type
+  vpc_security_group_ids = [aws_security_group.tjth_cv.id]
+  tags = {
+    Name = local.project_name
+  }
+  key_name = "hvm-access"
 
-    iam_instance_profile = "${aws_iam_instance_profile.ec2_s3_profile.name}"
+  iam_instance_profile = aws_iam_instance_profile.ec2_s3_profile.name
 
-    user_data = <<EOF
+  user_data = <<EOF
     #!/bin/bash
     sudo apt update
     sudo apt install python3 python3-pip awscli apt-transport-https ca-certificates curl software-properties-common -y
