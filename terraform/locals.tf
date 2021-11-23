@@ -10,4 +10,5 @@ locals {
   tjth_cidr = "193.28.11.136/32"
 
   app_http_port = 80
+  app_https_port = 443
 }
